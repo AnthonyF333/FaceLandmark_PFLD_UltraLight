@@ -13,7 +13,7 @@
 
 ### 1. PFLD网络结构
 PFLD的基础网络是基于MobileNet V2进行修改的，而MobileNet V2的基础模块是Inverted Residual Block，正是Inverted Residual Block能够保持网络性能的同时，可以大大减少网络的参数、运算量，甚至是推理时间。PFLD的基础网络如下表：
-| Input        | Operator   |  t  |c|n|s|
+|Input|Operator|t|c|n|s|
 |:----:|:----:|:----:|:----:|:----:|:----:|
 |112x112x3|Conv3×3|-|64|1|2|
 |56x56x64|DW Conv3×3|-|64|1|1|
