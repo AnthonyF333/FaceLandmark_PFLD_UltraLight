@@ -23,6 +23,7 @@ PFLD的基础网络是基于MobileNet V2进行修改的，而MobileNet V2的基�
 |14x14x128|Inverted Residual Block|2|16|1|1|
 |(S1) 14x14x16<br>(S2) 7x7x32<br>(S3) 1x1x128|Conv3×3<br>Conv7×7<br>-|-<br>-<br>-|32<br>128<br>128|1<br>1<br>1|2<br>1<br>-|
 |S1,S2,S3|Full Connection|-|136|1|-|
+
 可见PFLD基础网络中使用的是MobileNet V2的Inverted Residual Block，但是整体网络结构与MobileNet V2相比会有所差异，PFLD会比MobileNet V2更浅更窄，因此理论上PFLD比MobileNet V2更快速。
 ### 2. 损失函数
 原始PFLD网络的训练用到了人脸姿态角度作为辅助信息，并和人脸关键点的误差结合起来作为最终的损失函数，有兴趣的小伙伴可以阅读一下PFLD的论文，这里不展开说明了。在实际训练过程中，尝试了只是应用Wing Loss而不加辅助信息来对网络进行训练，Wing Loss的最终测试效果是要优于原始PFLD加上辅助信息的损失函数的效果，因此后续的优化过程都是使用Wing Loss来进行训练的，没有使用PFLD的辅助信息。下面是Wing Loss的公式。
