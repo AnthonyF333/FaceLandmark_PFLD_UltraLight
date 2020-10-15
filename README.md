@@ -38,13 +38,13 @@ WFLW测试结果
 　　Codes are based on Python 3.7
 　　
 **Data:**
-　　Download WFLW dataset: 
-　　　　[WFLW.zip](https://pan.baidu.com/s/1WHSwQOqbf9QQWcoLgEQbng) 
-　　　　Password: rw1t
-　　Move the WFLW.zip to ./data/ directory and unzip the WFLW.zip
-　　Run SetPreparation.py. 
+    Download WFLW dataset: 
+        [WFLW.zip](https://pan.baidu.com/s/1WHSwQOqbf9QQWcoLgEQbng) 
+        Password: rw1t
+    Move the WFLW.zip to ./data/ directory and unzip the WFLW.zip
+    Run SetPreparation.py. 
 　　
-　　By default, it repeat 10 times for every image for augmentation, and save result in ./test_data/ and ./train_data/ directory.
+    By default, it repeat 10 times for every image for augmentation, and save result in ./test_data/ and ./train_data/ directory.
 　　
 ## Training
 Before training, you can check or modify network configuration (e.g. batch_size, epoch and steps etc..) in config.py.
