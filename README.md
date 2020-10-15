@@ -39,8 +39,8 @@ WFLW测试结果
 
 **Data:**
 * Download WFLW dataset: 
-* * [WFLW.zip](https://pan.baidu.com/s/1WHSwQOqbf9QQWcoLgEQbng) 
-* * Password: rw1t
+  * [WFLW.zip](https://pan.baidu.com/s/1WHSwQOqbf9QQWcoLgEQbng) 
+  * Password: rw1t
 * Move the WFLW.zip to ./data/ directory and unzip the WFLW.zip
 * Run SetPreparation.py. 
 　　
