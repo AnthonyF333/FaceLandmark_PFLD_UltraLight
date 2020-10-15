@@ -1,5 +1,5 @@
 
-# PFLD - Ultralight - 275FPS
+# PFLD - Ultralight - 275FPS(CPU)
 
 ------
 
