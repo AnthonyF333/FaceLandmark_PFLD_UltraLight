@@ -34,6 +34,8 @@ WFLW测试结果
 ## Installation
 **Clone and install:**
 * git clone https://github.com/AnthonyF333/PFLD_UltraLight.git
+* cd ./PFLD_UltraLight
+* pip install -r requirement.txt
 * Pytorch version 1.4.0 are needed.
 * Codes are based on Python 3.7
 
@@ -42,12 +44,12 @@ WFLW测试结果
   * [WFLW.zip](https://pan.baidu.com/s/1WHSwQOqbf9QQWcoLgEQbng) 
   * Password: rw1t
 * Move the WFLW.zip to ./data/ directory and unzip the WFLW.zip
-* Run SetPreparation.py. 
+* Run SetPreparation.py to generate the training and test data.
 　　
-* By default, it repeat 10 times for every image for augmentation, and save result in ./data/test_data/ and ./data/train_data/ directory.
+* By default, it repeats 10 times for every image for augmentation, and save results in ./data/test_data/ and ./data/train_data/ directory.
 　　
 ## Training
-Before training, you can check or modify network configuration (e.g. batch_size, epoch and steps etc..) in config.py.
+Before training, check or modify network configuration (e.g. batch_size, epoch and steps etc..) in config.py.
   * MODEL_TYPE: you can choose PFLD, PFLD_Ghost or PFLD_Ghost_Slim for different network.
   * WIDTH_FACTOR: you can choose 1 for original network or 0.25 for narrower network.
 
@@ -55,7 +57,7 @@ After modify the configuration, run train.py to start training.
 
 ## Test
 Before test, modify the configuration in test.py, include the model_path, test_dataset, model_type, width_factor etc.
-Then run test.py to align the images in the test dataset, and save result in current directory.
+Then run test.py to align the images in the test dataset, and save results in current directory.
 
 ## C++ inference ncnn
 Generate the onnx file: Modify the model_type, width_factor, model_path in pytorch2onnx.py, and then run pytorch2onnx.py.
