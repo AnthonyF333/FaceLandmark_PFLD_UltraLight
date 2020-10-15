@@ -8,9 +8,9 @@ from models.base_module import Conv_Block, GhostBottleneck
 import torch.nn.functional as F
 
 
-class PFLD_Ghost(Module):
+class PFLD_Ultralight(Module):
     def __init__(self, width_factor=1, input_size=112, landmark_number=98):
-        super(PFLD_Ghost, self).__init__()
+        super(PFLD_Ultralight, self).__init__()
 
         self.conv1 = Conv_Block(3, int(64 * width_factor), 3, 2, 1)
         self.conv2 = Conv_Block(int(64 * width_factor), int(64 * width_factor), 3, 1, 1, group=int(64 * width_factor))
@@ -75,7 +75,7 @@ class PFLD_Ghost(Module):
         return landmarks
 
 
-class PFLD_Ghost_AuxiliaryNet(Module):
+class PFLD_Ultralight_AuxiliaryNet(Module):
     def __init__(self, width_factor=1):
         super(PFLD_Ghost_AuxiliaryNet, self).__init__()
         self.conv1 = Conv_Block(int(64 * width_factor), int(64 * width_factor), 1, 1, 0)
