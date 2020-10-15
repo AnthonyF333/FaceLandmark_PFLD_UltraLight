@@ -29,7 +29,7 @@ class PFLD_Ghost_Slim(Module):
 
         self.conv6 = GhostBottleneck(int(144 * width_factor), int(216 * width_factor), int(16 * width_factor), stride=1)
         self.conv7 = Conv_Block(int(16 * width_factor), int(32 * width_factor), 3, 1, 1)
-        self.conv8 = Conv_Block(int(32 * width_factor), int(128 * width_factor), input_size // 16, 1, 0)
+        self.conv8 = Conv_Block(int(32 * width_factor), int(128 * width_factor), input_size // 16, 1, 0, has_bn=False)
 
         self.avg_pool1 = AvgPool2d(input_size // 2)
         self.avg_pool2 = AvgPool2d(input_size // 4)
