@@ -8,7 +8,6 @@
 * PFLD_Ulitralight的训练/测试/评估/ncnn C++推理
 * 人脸98个关键点检测
 * 支持onnx导出
-* 网络parameter和flop计算
 
 ![image](https://github.com/AnthonyF333/PFLD_UltraLight/blob/master/images/tim_align.gif)
 
@@ -50,8 +49,10 @@ WFLW测试结果
 　　
 ## Training
 Before training, check or modify network configuration (e.g. batch_size, epoch and steps etc..) in config.py.
-  * MODEL_TYPE: you can choose PFLD, PFLD_Ghost or PFLD_Ghost_Slim for different network.
+  * MODEL_TYPE: you can choose PFLD, PFLD_Ultralight or PFLD_Ultralight_Slim for different network.
   * WIDTH_FACTOR: you can choose 1 for original network or 0.25 for narrower network.
+  * TRAIN_DATA_PATH: the path of training data, by default it is ./data/train_data/list.txt which is generate by SetPreparation.py.
+  * VAL_DATA_PATH: the path of validation data, by default it is ./data/test_data/list.txt which is generate by SetPreparation.py.
 
 After modify the configuration, run train.py to start training.
 
