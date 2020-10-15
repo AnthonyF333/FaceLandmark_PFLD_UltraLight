@@ -33,9 +33,9 @@ WFLW测试结果
 
 ## Installation
 **Clone and install:**
-　　git clone https://github.com/AnthonyF333/PFLD_UltraLight.git
-　　Pytorch version 1.4.0 are needed.
-　　Codes are based on Python 3.7
+* git clone https://github.com/AnthonyF333/PFLD_UltraLight.git
+* Pytorch version 1.4.0 are needed.
+* Codes are based on Python 3.7
 　　
 **Data:**
 * Download WFLW dataset: 
