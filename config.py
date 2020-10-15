@@ -13,7 +13,7 @@ def get_config():
     cfg.TRANSFORM = trans.Compose([trans.ToTensor(),
                                    trans.Normalize([0.5, 0.5, 0.5], [0.5, 0.5, 0.5])])
 
-    cfg.MODEL_TYPE = 'PFLD'  # [PFLD, PFLD_Ghost, PFLD_Ghost_Slim]
+    cfg.MODEL_TYPE = 'PFLD'  # [PFLD, PFLD_Ultralight, PFLD_Ultralight_Slim]
     cfg.INPUT_SIZE = [112, 112]
     cfg.WIDTH_FACTOR = 1
     cfg.LANDMARK_NUMBER = 98
