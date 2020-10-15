@@ -7,9 +7,9 @@ from torch.nn import Module, AvgPool2d, Linear
 from models.base_module import Conv_Block, GhostBottleneck
 
 
-class PFLD_Ghost_Slim(Module):
+class PFLD_Ultralight_Slim(Module):
     def __init__(self, width_factor=1, input_size=112, landmark_number=98):
-        super(PFLD_Ghost_Slim, self).__init__()
+        super(PFLD_Ultralight_Slim, self).__init__()
 
         self.conv1 = Conv_Block(3, int(64 * width_factor), 3, 2, 1)
         self.conv2 = Conv_Block(int(64 * width_factor), int(64 * width_factor), 3, 1, 1, group=int(64 * width_factor))
