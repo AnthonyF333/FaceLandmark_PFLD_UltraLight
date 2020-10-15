@@ -48,8 +48,8 @@ WFLW测试结果
 　　
 ## Training
 Before training, you can check or modify network configuration (e.g. batch_size, epoch and steps etc..) in config.py.
-　　MODEL_TYPE: you can choose PFLD, PFLD_Ghost or PFLD_Ghost_Slim for different network.
-　　WIDTH_FACTOR: you can choose 1 for original network or 0.25 for narrower network.
+  * MODEL_TYPE: you can choose PFLD, PFLD_Ghost or PFLD_Ghost_Slim for different network.
+  * WIDTH_FACTOR: you can choose 1 for original network or 0.25 for narrower network.
 
 After modify the configuration, run train.py to start training.
 
