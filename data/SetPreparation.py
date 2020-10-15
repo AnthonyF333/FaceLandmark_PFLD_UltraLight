@@ -165,7 +165,7 @@ def get_dataset_list(imgDir, outDir, landmarkDir, is_train):
         for i, line in enumerate(lines):
             Img = ImageDate(line, imgDir)
             img_name = Img.path
-            Img.load_data(is_train, 30, Mirror_file)
+            Img.load_data(is_train, 10, Mirror_file)
             _, filename = os.path.split(img_name)
             filename, _ = os.path.splitext(filename)
             label_txt = Img.save_data(save_img, str(i) + '_' + filename)
@@ -186,7 +186,7 @@ if __name__ == '__main__':
     landmarkDirs = ['WFLW/WFLW_annotations/list_98pt_rect_attr_train_test/list_98pt_rect_attr_test.txt',
                     'WFLW/WFLW_annotations/list_98pt_rect_attr_train_test/list_98pt_rect_attr_train.txt']
 
-    outDirs = ['test_data_112_repeat30', 'train_data_112_repeat30']
+    outDirs = ['test_data', 'train_data']
     for landmarkDir, outDir in zip(landmarkDirs, outDirs):
         outDir = os.path.join(root_dir, outDir)
         print(outDir)
