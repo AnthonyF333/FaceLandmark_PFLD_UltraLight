@@ -21,8 +21,8 @@ def get_config():
     cfg.TRAIN_BATCH_SIZE = 256
     cfg.VAL_BATCH_SIZE = 8
 
-    cfg.TRAIN_DATA_PATH = '../../data/face_alignment/train_data_repeat80/list.txt'
-    cfg.VAL_DATA_PATH = '../../data/face_alignment/test_data_repeat80/list.txt'
+    cfg.TRAIN_DATA_PATH = './data/train_data/list.txt'
+    cfg.VAL_DATA_PATH = './data/test_data/list.txt'
 
     cfg.EPOCHES = 200
     cfg.LR = 1e-4
