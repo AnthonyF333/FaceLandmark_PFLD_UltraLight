@@ -140,8 +140,8 @@ def parse_args():
     parser.add_argument('--width_factor', default=1, type=float)
     parser.add_argument('--landmark_number', default=98, type=int)
     parser.add_argument('--device', default='cuda', type=str)
-    parser.add_argument('--model_path', default="./checkpoint/models/PFLD_Ghost_1_112_2020-08-24-21-11/pfld_ghost_best.pth", type=str)
-    parser.add_argument('--test_dataset', default='./data/test_data_112_repeat30/list.txt', type=str)
+    parser.add_argument('--model_path', default="./checkpoint/models/PFLD_Ghost_1_112_2020-08-29-08-49/pfld_ghost_best.pth", type=str)
+    parser.add_argument('--test_dataset', default='../../data/face_alignment/test_data/list.txt', type=str)
     parser.add_argument('--show_image', default=True, type=bool)
     args = parser.parse_args()
     return args
