@@ -12,11 +12,11 @@ from models.PFLD_Ghost import PFLD_Ghost
 from models.PFLD_Ghost_Slim import PFLD_Ghost_Slim
 
 parser = argparse.ArgumentParser(description='pytorch2onnx')
-parser.add_argument('--model_type', default='PFLD_Ghost', type=str)
+parser.add_argument('--model_type', default='PFLD_Ultralight', type=str)
 parser.add_argument('--input_size', default=112, type=int)
 parser.add_argument('--width_factor', default=1, type=float)
 parser.add_argument('--landmark_number', default=98, type=int)
-parser.add_argument('--model_path', default="./checkpoint/models/PFLD_Ghost_1_112_2020-08-29-08-49/pfld_ghost_best.pth")
+parser.add_argument('--model_path', default="./checkpoint/models/PFLD_Ultralight_1_112_2020-08-29-08-49/pfld_ultralight_best.pth")
 args = parser.parse_args()
 
 print("=====> load pytorch checkpoint...")
