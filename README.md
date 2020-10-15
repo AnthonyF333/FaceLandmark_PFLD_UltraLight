@@ -29,7 +29,7 @@ WFLW测试结果
 |Model|Width|NME|Inference Time(NCNN 1xCore)|Model Size|
 |:----:|:----:|:----:|:----:|:----:|
 |PFLD|0.25<br>1|0.06163<br>0.05818|5.74ms<br>39.3ms|0.45M<br>5M|
-|PFLD_Ghost|0.25<br>1|0.06072 (&darr;1.48%)<br>0.05652 (&darr;2.85%)|3.63ms (&darr;36.8%)<br>18.1ms   (&darr;53.9%)|0.41M (&darr;8.89%)<br>3.40M (&darr;32.0%)|
+|PFLD_Ultralight|0.25<br>1|0.06072 (&darr;1.48%)<br>0.05652 (&darr;2.85%)|3.63ms (&darr;36.8%)<br>18.1ms   (&darr;53.9%)|0.41M (&darr;8.89%)<br>3.40M (&darr;32.0%)|
 
 ## Installation
 **Clone and install:**
