@@ -12,7 +12,7 @@
 ![image](https://github.com/AnthonyF333/PFLD_UltraLight/blob/master/images/tim_align.gif)
 
 ## 基于PFLD进行优化的超轻量级人脸关键点检测器
-提供了一系列适合移动端部署的人脸关键点检测器： 对PFLD网络的基础结构进行优化，并调整网络结构，使其更适合边缘计算，而且在绝大部分情况下精度均好于原始PFLD网络。
+提供了一系列适合移动端部署的人脸关键点检测器： 对PFLD网络的基础结构进行优化，并调整网络结构，使其更适合边缘计算，而且在绝大部分情况下精度均好于原始PFLD网络，在CPU下运行最快可达到400fps。
 
 ## 运行环境
 * Ubuntu 16.04
