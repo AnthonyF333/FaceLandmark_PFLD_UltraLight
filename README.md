@@ -25,12 +25,14 @@
 
 ## 精度
 WFLW测试结果
+
 输入大小为112x112
 |Model|Width|NME|Inference Time(NCNN 1xCore)|Model Size|
 |:----:|:----:|:----:|:----:|:----:|
 |PFLD|0.25<br>1|0.06159<br>0.05837|5.5ms<br>39.7ms|0.45M<br>5M|
 |PFLD_Ultralight|0.25<br>1|0.06101 (&darr;0.94%)<br>0.05749 (&darr;1.51%)|3.6ms (&darr;34.5%)<br>18.6ms   (&darr;53.1%)|0.41M (&darr;8.89%)<br>3.40M (&darr;32.0%)|
 |PFLD_Ultralight_Slim|0.25<br>1|0.06258 (&uarr;1.61%)<br>0.05627 (&darr;3.60%)|3.3ms (&darr;40.0%)<br>16.0ms   (&darr;59.7%)|0.38M (&darr;15.6%)<br>3.10M (&darr;38.0%)|
+
 
 输入大小为96x96
 |Model|Width|NME|Inference Time(NCNN 1xCore)|Model Size|
