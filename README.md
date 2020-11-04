@@ -72,7 +72,9 @@ Before test, modify the configuration in test.py, include the model_path, test_d
 Then run test.py to align the images in the test dataset, and save results in ./test_result directory.
 
 ## C++ inference ncnn
-Generate the onnx file: Modify the model_type, width_factor, model_path in pytorch2onnx.py, and then run pytorch2onnx.py.
+1) Generate the onnx file: Modify the model_type, width_factor, model_path in pytorch2onnx.py, and then run pytorch2onnx.py to generate the xxx.onnx file.
+2) Simptfy the onnx file: First run "pip3 install onnx-simplifier" to install the tool, then run "python3 -m onnxsim xxx.onnx xxx_sim.onnx" to simpify the onnx file.
+3) Transform onnx to ncnn format: Run "./onnx2ncnn xxx_sim.onnx xxx_sim.param xxx_sim.bin" to generate the ncnn files.
 
 ## References
 * [PFLD](https://github.com/polarisZhao/PFLD-pytorch)
