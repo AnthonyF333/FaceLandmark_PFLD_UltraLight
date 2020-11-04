@@ -1,5 +1,5 @@
 
-# PFLD - Ultralight - 275FPS(CPU)
+# PFLD - Ultralight - 400FPS(CPU)
 
 ------
 
@@ -25,10 +25,19 @@
 
 ## 精度
 WFLW测试结果
+输入大小为112x112
 |Model|Width|NME|Inference Time(NCNN 1xCore)|Model Size|
 |:----:|:----:|:----:|:----:|:----:|
-|PFLD|0.25<br>1|0.06163<br>0.05818|5.74ms<br>39.3ms|0.45M<br>5M|
-|PFLD_Ultralight|0.25<br>1|0.06072 (&darr;1.48%)<br>0.05652 (&darr;2.85%)|3.63ms (&darr;36.8%)<br>18.1ms   (&darr;53.9%)|0.41M (&darr;8.89%)<br>3.40M (&darr;32.0%)|
+|PFLD|0.25<br>1|0.06159<br>0.05837|5.5ms<br>39.7ms|0.45M<br>5M|
+|PFLD_Ultralight|0.25<br>1|0.06101 (&darr;0.94%)<br>0.05749 (&darr;1.51%)|3.6ms (&darr;34.5%)<br>18.6ms   (&darr;53.1%)|0.41M (&darr;8.89%)<br>3.40M (&darr;32.0%)|
+|PFLD_Ultralight_Slim|0.25<br>1|0.06258 (&uarr;1.61%)<br>0.05627 (&darr;3.60%)|3.3ms (&darr;40.0%)<br>16.0ms   (&darr;59.7%)|0.38M (&darr;15.6%)<br>3.10M (&darr;38.0%)|
+
+输入大小为96x96
+|Model|Width|NME|Inference Time(NCNN 1xCore)|Model Size|
+|:----:|:----:|:----:|:----:|:----:|
+|PFLD|0.25<br>1|0.06136<br>0.05818|4.1ms<br>29.2ms|0.43M<br>4.8M|
+|PFLD_Ultralight|0.25<br>1|0.06321 (&uarr;3.0%)<br>0.05745 (&darr;1.25%)|2.7ms (&darr;34.1%)<br>14.0ms   (&darr;52.1%)|0.39M (&darr;9.30%)<br>3.20M (&darr;33.3%)|
+|PFLD_Ultralight_Slim|0.25<br>1|0.06402 (&uarr;4.33%)<br>0.05683 (&darr;2.32%)|2.5ms (&darr;40.0%)<br>12.0ms   (&darr;59.7%)|0.37M (&darr;14.0%)<br>2.90M (&darr;39.6%)|
 
 ## Installation
 **Clone and install:**
