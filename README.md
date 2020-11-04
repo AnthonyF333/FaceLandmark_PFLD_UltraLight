@@ -69,7 +69,7 @@ After modify the configuration, run train.py to start training.
 
 ## Test
 Before test, modify the configuration in test.py, include the model_path, test_dataset, model_type, width_factor etc.
-Then run test.py to align the images in the test dataset, and save results in current directory.
+Then run test.py to align the images in the test dataset, and save results in ./test_result directory.
 
 ## C++ inference ncnn
 Generate the onnx file: Modify the model_type, width_factor, model_path in pytorch2onnx.py, and then run pytorch2onnx.py.
