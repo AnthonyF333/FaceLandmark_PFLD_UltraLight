@@ -13,8 +13,8 @@ import torch.backends.cudnn as cudnn
 from dataset.datasets import WLFWDatasets
 
 from models.PFLD import PFLD
-from models.PFLD_Ghost import PFLD_Ghost
-from models.PFLD_Ghost_Slim import PFLD_Ghost_Slim
+from models.PFLD_Ultralight import PFLD_Ultralight
+from models.PFLD_Ultralight_Slim import PFLD_Ultralight_Slim
 
 cudnn.benchmark = True
 cudnn.determinstic = True

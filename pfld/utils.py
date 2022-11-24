@@ -27,12 +27,12 @@ def save_checkpoint(cfg, model, step=None, extra=''):
 
     if extra:
         if step is not None:
-            torch.save(model.state_dict(), os.path.join(save_path, ('{}_step:{}_{}.pth'.format(cfg.MODEL_TYPE.lower(), step, extra))))
+            torch.save(model.state_dict(), os.path.join(save_path, ('{}_step_{}_{}.pth'.format(cfg.MODEL_TYPE.lower(), step, extra))))
         else:
             torch.save(model.state_dict(), os.path.join(save_path, ('{}_{}.pth'.format(cfg.MODEL_TYPE.lower(), extra))))
     else:
         if step is not None:
-            torch.save(model.state_dict(), os.path.join(save_path, ('{}_step:{}.pth'.format(cfg.MODEL_TYPE.lower(), step))))
+            torch.save(model.state_dict(), os.path.join(save_path, ('{}_step_{}.pth'.format(cfg.MODEL_TYPE.lower(), step))))
         else:
             torch.save(model.state_dict(), os.path.join(save_path, ('{}.pth'.format(cfg.MODEL_TYPE.lower()))))
 
